@@ -9,20 +9,18 @@
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{url('styles.css')}}">
 
 
 </head>
 <body style="background-color: black">
 
-
 <div class="main" >
     <nav>
         <h2 class="logo">Novaji <span>Introserve</span></h2>
         <ul>
-            <li><a class="active" href="/">home</a></li>
-            <li><a href="#">service</a></li>
-            <li><a href="#">contact us</a></li>
+            <li><a class="active" href="/">Home</a></li>
+            <li><a href="addproduct">Add Product</a></li>
             <li><a href="cart"><i class="icon-shopping-cart" ></i> </a></li>
         </ul>
         <button type="button"> Subscribe</button>
@@ -47,104 +45,22 @@
 
 
 <div class="featured_product">
+    @foreach($user as $users)
     <div class="prod">
-        <img src="img/image3.jpg" alt="">
+        <a href="editproduct/{{$users->id}}"> <img src="productimage/{{$users->image}}" alt=""></a>
         <div class="des">
-            <span>adidas</span>
-            <h5>product name</h5>
-            <h4>amount $</h4>
-        </div>
-        <a href=""><span class="icon-shopping-cart cart"></span></a>
-    </div>
+            <span>{{$users -> name}}</span>
+            <h5>{{$users -> description}}</h5>
+            <h4>{{$users -> price}}</h4>
+            <h4> <a class="btn btn-danger"  onclick="return confirm('are you sure you want to delete this product')" style="color:red" href="{{url('deleteproduct', $users->id)}}">DELETE</a></h4>
 
-    <div class="prod">
-        <img src="img/image3.jpg" alt="">
-        <div class="des">
-            <span>adidas</span>
-            <h5>product name</h5>
-            <h4>amount $</h4>
         </div>
         <a href=""><span class="icon-shopping-cart cart"></span></a>
-    </div>
 
-    <div class="prod">
-        <img src="img/image3.jpg" alt="">
-        <div class="des">
-            <span>adidas</span>
-            <h5>product name</h5>
-            <h4>amount $</h4>
-        </div>
-        <a href=""><span class="icon-shopping-cart cart"></span></a>
     </div>
+    @endforeach
 
-    <div class="prod">
-        <img src="img/image3.jpg" alt="">
-        <div class="des">
-            <span>adidas</span>
-            <h5>product name</h5>
-            <h4>amount $</h4>
-        </div>
-        <a href=""><span class="icon-shopping-cart cart"></span></a>
-    </div>
 
-    <div class="prod">
-        <img src="img/image3.jpg" alt="">
-        <div class="des">
-            <span>adidas</span>
-            <h5>product name</h5>
-            <h4>amount $</h4>
-        </div>
-        <a href=""><span class="icon-shopping-cart cart"></span></a>
-    </div>
-
-    <div class="prod">
-        <img src="img/image3.jpg" alt="">
-        <div class="des">
-            <span>adidas</span>
-            <h5>product name</h5>
-            <h4>amount $</h4>
-        </div>
-        <a href=""><span class="icon-shopping-cart cart"></span></a>
-    </div>
-    <div class="prod">
-        <img src="img/image3.jpg" alt="">
-        <div class="des">
-            <span>adidas</span>
-            <h5>product name</h5>
-            <h4>amount $</h4>
-        </div>
-        <a href=""><span class="icon-shopping-cart cart"></span></a>
-    </div>
-
-    <div class="prod">
-        <img src="img/image3.jpg" alt="">
-        <div class="des">
-            <span>adidas</span>
-            <h5>product name</h5>
-            <h4>amount $</h4>
-        </div>
-        <a href=""><span class="icon-shopping-cart cart"></span></a>
-    </div>
-
-    <div class="prod">
-        <img src="img/image3.jpg" alt="">
-        <div class="des">
-            <span>adidas</span>
-            <h5>product name</h5>
-            <h4>amount $</h4>
-        </div>
-        <a href=""><span class="icon-shopping-cart cart"></span></a>
-    </div>
-
-    <div class="prod">
-        <img src="img/image3.jpg" alt="">
-        <div class="des">
-            <span>adidas</span>
-            <h5>product name</h5>
-            <h4>amount $</h4>
-        </div>
-        <a href=""><span class="icon-shopping-cart cart"></span></a>
-    </div>
 
 
 </div>

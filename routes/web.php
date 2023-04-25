@@ -15,10 +15,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [UserController::class, 'index']);
-Route::post('addproduct', [UserController::class, 'addproduct']);
+Route::get('addproduct', [UserController::class, 'addproduct']);
 Route::post('updateproduct', [UserController::class, 'updateproduct']);
-Route::post('deleteproduct', [UserController::class, 'deleteproduct']);
-
+Route::get('deleteproduct/{id}', [UserController::class, 'deleteproduct']);
+Route::post('insertproduct', [UserController::class, 'insertproduct']);
+Route::get('editproduct/{id}', [UserController::class, 'editproduct']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

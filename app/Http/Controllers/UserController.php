@@ -11,7 +11,10 @@ class UserController extends Controller
         $user = Product::all();
         return view('index', compact('user'));
     }
-    public function addproduct(Request $request){
+    public function addproduct(){
+        return view ('addproduct');
+    }
+    public function insertproduct(Request $request){
         $product = new Product();
         $product->name = $request->name;
         $product->description = $request->description;
@@ -20,12 +23,16 @@ class UserController extends Controller
         if($image) {
             $imagename = time().'.'.$image->getClientoriginalExtension();
 
-            $request->file->move('blogimage', $imagename);
+            $request->image->move('productimage', $imagename);
             $product->image = $imagename;
         }
         $product->save();
         return redirect()->back()->with('message', 'uploaded sucessfully');
 
+    }
+    public function editproduct($id){
+        $user = Product::find($id);
+        return view('editproduct', compact('user'));
     }
     public function updateproduct(Request $request){
         $product = new Product();
@@ -36,7 +43,7 @@ class UserController extends Controller
         if($image) {
             $imagename = time().'.'.$image->getClientoriginalExtension();
 
-            $request->file->move('productimage', $imagename);
+            $request->image->move('productimage', $imagename);
             $product->image = $imagename;
         }
         $product->save();
