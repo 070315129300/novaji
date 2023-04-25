@@ -43,7 +43,7 @@ class UserController extends Controller
         return redirect()->back()->with('message', 'uploaded sucessfully');
 
     }
-    publc function deleteproduct($id){
+    public function deleteproduct($id){
     $data = Product::find($id);
     $data->delete();
     return redirect('/')->with('success', 'product removed');

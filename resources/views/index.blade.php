@@ -5,11 +5,11 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ay</title>
+    <title>novaji</title>
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
 
 
 </head>
@@ -21,9 +21,8 @@
         <h2 class="logo">Novaji <span>Introserve</span></h2>
         <ul>
             <li><a class="active" href="/">home</a></li>
-            <li><a href="services">service</a></li>
-            <li><a href="contact">contact us</a></li>
-            <li><a href="">blog</a></li>
+            <li><a href="#">service</a></li>
+            <li><a href="#">contact us</a></li>
             <li><a href="cart"><i class="icon-shopping-cart" ></i> </a></li>
         </ul>
         <button type="button"> Subscribe</button>
@@ -44,43 +43,9 @@
         <img src="img/image1.jpg" alt="">
     </div>
 </div>
-<div class="featured"><h2>Featured product</h2></div>
-<div class="featured_product">
-    <div class="feat_box mb-5">
-        <img src="img/image2.jpg" alt="">
-        <h6>title</h6>
-        <h6>product name</h6>
-    </div>
-    <div class="feat_box mb-5">
-        <img src="img/image3.jpg" alt="">
-        <h6>title</h6>
-        <h6>product name</h6>
-    </div>
-    <div class="feat_box mb-5">
-        <img src="img/image4.jpg" alt="">
-        <h6>title</h6>
-        <h6>product name</h6>
-    </div>
-    <div class="feat_box mb-5">
-        <img src="img/image5.jpg" alt="">
-        <h6>title</h6>
-        <h6>product name</h6>
-    </div>
-    <div class="feat_box mb-5">
-        <img src="img/image2.jpg" alt="">
-        <h6>title</h6>
-        <h6>product name</h6>
-    </div>
-    <div class="feat_box mb-5">
-        <img src="img/image3.jpg" alt="">
-        <h6>title</h6>
-        <h6>product name</h6>
-    </div>
 
-</div>
-<div class="featured">
-    <h2>New Product</h2>
-</div>
+
+
 <div class="featured_product">
     <div class="prod">
         <img src="img/image3.jpg" alt="">
@@ -122,11 +87,73 @@
         <a href=""><span class="icon-shopping-cart cart"></span></a>
     </div>
 
+    <div class="prod">
+        <img src="img/image3.jpg" alt="">
+        <div class="des">
+            <span>adidas</span>
+            <h5>product name</h5>
+            <h4>amount $</h4>
+        </div>
+        <a href=""><span class="icon-shopping-cart cart"></span></a>
+    </div>
+
+    <div class="prod">
+        <img src="img/image3.jpg" alt="">
+        <div class="des">
+            <span>adidas</span>
+            <h5>product name</h5>
+            <h4>amount $</h4>
+        </div>
+        <a href=""><span class="icon-shopping-cart cart"></span></a>
+    </div>
+    <div class="prod">
+        <img src="img/image3.jpg" alt="">
+        <div class="des">
+            <span>adidas</span>
+            <h5>product name</h5>
+            <h4>amount $</h4>
+        </div>
+        <a href=""><span class="icon-shopping-cart cart"></span></a>
+    </div>
+
+    <div class="prod">
+        <img src="img/image3.jpg" alt="">
+        <div class="des">
+            <span>adidas</span>
+            <h5>product name</h5>
+            <h4>amount $</h4>
+        </div>
+        <a href=""><span class="icon-shopping-cart cart"></span></a>
+    </div>
+
+    <div class="prod">
+        <img src="img/image3.jpg" alt="">
+        <div class="des">
+            <span>adidas</span>
+            <h5>product name</h5>
+            <h4>amount $</h4>
+        </div>
+        <a href=""><span class="icon-shopping-cart cart"></span></a>
+    </div>
+
+    <div class="prod">
+        <img src="img/image3.jpg" alt="">
+        <div class="des">
+            <span>adidas</span>
+            <h5>product name</h5>
+            <h4>amount $</h4>
+        </div>
+        <a href=""><span class="icon-shopping-cart cart"></span></a>
+    </div>
+
 
 </div>
 
 
-
+<div class="footer">
+    Copyright &copy; <?php echo date('Y'); ?>
+    NOVAJI. All rights reserved.Caleb;
+</div>
 </body>
 </html>
 
