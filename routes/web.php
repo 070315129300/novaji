@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [UserController::class, 'index']);
+Route::post('addproduct', [UserController::class, 'addproduct']);
+Route::post('updateproduct', [UserController::class, 'updateproduct']);
+Route::post('deleteproduct', [UserController::class, 'deleteproduct']);
 
 Auth::routes();
 
