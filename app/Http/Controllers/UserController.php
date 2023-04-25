@@ -27,7 +27,7 @@ class UserController extends Controller
             $product->image = $imagename;
         }
         $product->save();
-        return redirect()->back()->with('message', 'uploaded sucessfully');
+        return redirect()->back()->with('message', 'updated sucessfully');
 
     }
     public function editproduct($id){
